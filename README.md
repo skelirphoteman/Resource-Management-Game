@@ -6,7 +6,8 @@ Plusieurs domaines seront mis en oeuvre :
  - Gestion de projet (Création du scénario, Modèle 2TUP)
  - Analyse et conception (Modélisation UML de l'architecture)
  - Développement informatique (Java pour le moment)
- - CI (mise en place de tests d'intégration)
+
+En option si possibilité : CI (mise en place de tests d'intégration)
 
 
 ## Cadre
@@ -15,7 +16,7 @@ Ce projet est réalisé dans un cadre personnelle est n'est lié en aucun cas au
 
 ## Objectif
 
-Réaliser un jeu de gestion évolutif.
+Réaliser un jeu de gestion (évolutif) dans un temps court.
 
 ## Contraintes 
 
