@@ -54,11 +54,11 @@ Many activitys of domains will use :
 As an option, we create and deploy CI
 
 
-### Cadre
+### Environment
 
 This project is developing in personal motivation and isn't use in practical work or corporate mission 
 
-### Objectif
+### Objectives
 
 Réaliser un jeu de gestion (évolutif) dans un temps court.
 
