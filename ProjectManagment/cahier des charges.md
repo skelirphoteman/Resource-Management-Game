@@ -72,16 +72,3 @@ Regroupement :
 | Joueur | Jeu | Passer de niveau                      |
 | Jeu | Joueur | Informations ressources / joueur      |
 
-
-```plantuml
-@startuml
-actor joueur << actor >>
-agent jeu
-jeu --> joueur : Informations ressources /joueur
-
-joueur --> jeu :  - Acheter/Améliorer/Récolter Extracteur \n- Informations ressources / joueur
-
-joueur -- jeu
-@enduml
-
-```
