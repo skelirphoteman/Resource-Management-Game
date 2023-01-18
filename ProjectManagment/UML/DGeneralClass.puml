@@ -1,0 +1,38 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Jeu{
+}
+note "- resources \n - Extractors \n - Level" as N1
+
+Jeu -- N1
+
+Jeu *-- "1 \n - or" Or
+
+abstract class Resource{
+    - name : String
+    - quantity : int
+}
+
+
+
+class Or extends Resource {
+}
+
+class Wood extends Resource {
+}
+
+
+class Iron extends Resource {
+}
+
+
+
+
+
+
+class Extractor
+note "- Niveau \n - Name" as N3
+
+Extractor -- N3
+@enduml

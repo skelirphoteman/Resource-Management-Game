@@ -1,0 +1,33 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Jeu
+note " - or \n - wood \n - iron \n - Extractors \n - Level" as N1
+
+Jeu -- N1
+
+
+class Resource
+note "- Name \n - quantity" as N2
+
+Resource -- N2
+
+class Extractor
+note "- Niveau \n - Name" as N3
+
+Extractor -- N3
+
+class Or
+note "- Name \n - quantity" as N4
+
+Or -- N4
+class Wood
+note "- Name \n - quantity" as N5
+
+Wood -- N5
+
+class Iron
+note "- Name \n - quantity" as N6
+
+Iron -- N6
+@enduml
