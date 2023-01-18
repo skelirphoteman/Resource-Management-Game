@@ -1,4 +1,4 @@
-Cahier des charges
+# Cahier des charges
 
 Au début du jeu, le joueur commence au niveau 1 et avec :
 
@@ -51,3 +51,37 @@ Voici les actions possibles :
 - Récolter toutes les ressources
 - Voir les informations globales (niveau, nombre de ressources, extracteur
 - Passer de niveau (et gagner)
+
+
+# Etude préliminaire
+
+Acteurs :
+- Joueur
+
+Messages :
+- Acheter, améliorer et récolter un extracteur
+- Information des ressources
+- Passer de niveau
+
+
+Regroupement : 
+
+| Emetteur | Récepteur | Message(s)                            |
+|--------| --------- |---------------------------------------|
+| Joueur | Jeu | Acheter/Améliorer/Récolter Extracteur |
+| Joueur | Jeu | Passer de niveau                      |
+| Jeu | Joueur | Informations ressources / joueur      |
+
+
+```plantuml
+@startuml
+actor joueur << actor >>
+agent jeu
+jeu --> joueur : Informations ressources /joueur
+
+joueur --> jeu :  - Acheter/Améliorer/Récolter Extracteur \n- Informations ressources / joueur
+
+joueur -- jeu
+@enduml
+
+```
