@@ -72,3 +72,4 @@ Regroupement :
 | Joueur | Jeu | Passer de niveau                      |
 | Jeu | Joueur | Informations ressources / joueur      |
 
+![](https://github.com/skelirphoteman/jeu-de-strategie/blob/main/ProjectManagment/UML/DContextary.png)
