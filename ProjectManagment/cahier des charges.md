@@ -68,8 +68,18 @@ Regroupement :
 
 | Emetteur | Récepteur | Message(s)                            |
 |--------| --------- |---------------------------------------|
+| Joueur | Jeu | Lancer le jeu              |
 | Joueur | Jeu | Acheter/Améliorer/Récolter Extracteur |
 | Joueur | Jeu | Passer de niveau                      |
 | Jeu | Joueur | Informations ressources / joueur      |
 
 ![](https://github.com/skelirphoteman/jeu-de-strategie/blob/main/ProjectManagment/UML/DContextary.png)
+
+
+# Capture des besoins fonctionnels
+
+Diagrame de use case :
+
+![](https://github.com/skelirphoteman/jeu-de-strategie/blob/main/ProjectManagment/UML/DUseCase.png)
+
+Les fiches de scénario se trouvent dans le dossier **Scenarios**  

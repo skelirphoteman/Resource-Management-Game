@@ -1,0 +1,14 @@
+@startuml
+left to right direction
+actor "Joueur" as fc
+rectangle Jeu {
+  usecase "Lancer le jeu" as UC1
+  usecase "Gérer les extracteurs" as UC2
+  usecase "Passer de niveau" as UC3
+  usecase "Informations joueurs/ressources" as UC4
+}
+fc --> UC1
+fc --> UC2
+fc --> UC3
+fc --> UC4
+@enduml
