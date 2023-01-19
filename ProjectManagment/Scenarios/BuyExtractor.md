@@ -20,8 +20,8 @@ Le jeu est lancé
 ## Exception
 
 1) Le joueur n'a pas assez de ressources pour acheter l'extracteur
-- 1.1) Scénario annulé
+- 1.1) Le joueur n'achète pas l'extracteur de niveau n
 
 ## Post-condition
 
-Le joueur a un nouveau extracteur de niveau n et de ressource en moins (soustraction du coût de l'achat)
+Le joueur a un nouveau extracteur de niveau n et des ressources en moins (soustraction du coût de l'achat)

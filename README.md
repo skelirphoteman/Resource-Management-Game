@@ -76,7 +76,7 @@ Respect game development workflow :
 
 All documents will write in .md to make it easier to read.
 
-I will **try to translate** all documents but it will take some time.
+I will **try to translate** all documents, but it will take some time.
 
 ## How understand this project ?
 

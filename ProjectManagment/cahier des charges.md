@@ -42,6 +42,11 @@ Extracteur de fer :
 
 Il faut récolter les ressources pour pouvoir les utiliser.
 
+Pour calculer la quantité de ressources ajoutée au stockage du joueur, il faut prendre quand est-ce que la dernière récolte a eu lieu (lastCollect) et le moment de la collecte (currentTime) et faire :
+currentTime - lastCollect = temps écoulé
+
+Le temps écoulé est en minute, et l'on multiplie cette valeur par le rendement par minute de l'extracteur k
+
 Version 1 : Jouable avec l'invite de commande
 
 Voici les actions possibles :
@@ -78,7 +83,7 @@ Regroupement :
 
 # Capture des besoins fonctionnels
 
-Diagrame de use case :
+Diagramme de use case :
 
 ![](https://github.com/skelirphoteman/jeu-de-strategie/blob/main/ProjectManagment/UML/DUseCase.png)
 
