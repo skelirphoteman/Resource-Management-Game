@@ -1,20 +1,52 @@
 @startuml
 'https://plantuml.com/class-diagram
 
-class Jeu{
+class Player{
+
+
+    + levelUp()
+    + buyExtractor()
+    + levelUpExtractor()
+    + collectExtractor()
+
 }
-note "- resources \n - Extractors \n - Level" as N1
 
-Jeu -- N1
+interface Prototype{
+    + clone() : Prototype
+}
 
-Jeu *-- "1 \n - or" Or
+class ExtractorRegistry{
 
+}
+
+ExtractorRegistry -- Prototype
+
+Player .right.> ExtractorRegistry
+
+class Extractor implements Prototype{
+    - name : String
+    - efficiency : int
+    - lastCollect
+
+
+    + collect() : int;
+    + clone() : int;
+}
+
+
+Player *--- "1 \n - level" PlayerLevel
+Player *-- "1 \n - storage" Storage
 abstract class Resource{
     - name : String
     - quantity : int
 }
 
+class Storage {
 
+}
+Storage *-- "1 \n - or" Or
+Storage *-- "1 \n - wood" Wood
+Storage *-- "1 \n - iron" Iron
 
 class Or extends Resource {
 }
@@ -26,13 +58,17 @@ class Wood extends Resource {
 class Iron extends Resource {
 }
 
+abstract class PlayerLevel {
+    + levelUp(or : int, wood : int, iron : int);
+}
 
 
+class PlayerLevel1 extends PlayerLevel {
 
+}
 
+class PlayerLevel2 extends PlayerLevel {
 
-class Extractor
-note "- Niveau \n - Name" as N3
+}
 
-Extractor -- N3
 @enduml
