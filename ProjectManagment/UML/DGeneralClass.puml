@@ -8,31 +8,30 @@ class Player{
     + buyExtractor()
     + levelUpExtractor()
     + collectExtractor()
-
+    + getExtractorList()
 }
 
-interface Prototype{
-    + clone() : Prototype
+class ExtractorsRegistry <<singleton>>{
+    + getExtractorsPrototype() : List<ExtractorPrototype>
+    + getExtractorsById() : ExtractorPrototype
+    + addExtractorPrototype(extractor : ExtractorPrototype)
 }
 
-class ExtractorRegistry{
+ExtractorsRegistry o-- "0..n \n - extractorsPrototype" ExtractorPrototype
 
-}
+Player .left.> ExtractorsRegistry
 
-ExtractorRegistry -- Prototype
-
-Player .right.> ExtractorRegistry
-
-class Extractor implements Prototype{
+class ExtractorPrototype {
     - name : String
     - efficiency : int
-    - lastCollect
-
-
-    + collect() : int;
-    + clone() : int;
 }
-
+class Extractor {
+    - lastCollect : Time
+    + collect() : int;
+}
+Player *-- Extractor
+ExtractorPrototype o-- "1 \n - type"Resource
+Extractor o-- "1 \n - extractorPrototype" ExtractorPrototype
 
 Player *--- "1 \n - level" PlayerLevel
 Player *-- "1 \n - storage" Storage

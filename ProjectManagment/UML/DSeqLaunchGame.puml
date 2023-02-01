@@ -3,22 +3,13 @@
 
 actor __player__
 
-__player__ -> "__storage__ : Storage" : <<create()>>
+__player__ -> "__extractorRegistry__ : ExtractorRegistry" : getExtractorsPrototype
 activate __player__
 
-"__storage__ : Storage" -> "__or__ : Or": <<create()>>
-activate "__storage__ : Storage"
-activate "__or__ : Or"
-deactivate "__or__ : Or"
-"__storage__ : Storage" ->" __wood__ : Wood" : <<create()>>
-activate " __wood__ : Wood"
-deactivate " __wood__ : Wood"
-"__storage__ : Storage" -> "__iron__ : Iron" : <<create()>>
-activate "__iron__ : Iron"
-deactivate "__iron__ : Iron"
-deactivate "__storage__ : Storage"
+activate "__extractorRegistry__ : ExtractorRegistry"
 
-
+__player__ -> "__extractorRegistry__ : ExtractorRegistry" : getExtractorPrototypeById(4)
+__player__ <-- "__extractorRegistry__ : ExtractorRegistry" : extractorPrototype
 
 __player__ -> "__level__ : PlayerLevel" : <<create()>>
 activate "__level__ : PlayerLevel"
