@@ -18,7 +18,7 @@ class ExtractorsRegistry <<singleton>>{
 }
 
 ExtractorsRegistry o-- "0..n \n - extractorsPrototype" ExtractorPrototype
-
+Extractor .up.> Storage
 Player .left.> ExtractorsRegistry
 
 class ExtractorPrototype {
@@ -27,25 +27,28 @@ class ExtractorPrototype {
 }
 class Extractor {
     - lastCollect : Time
-    + collect() : int;
+    + collect() : int
 }
 Player *-- Extractor
-ExtractorPrototype o-- "1 \n - type"Resource
-Extractor o-- "1 \n - extractorPrototype" ExtractorPrototype
+ExtractorPrototype -- "1 \n - type"Resource
+Extractor -- "1 \n - extractorPrototype" ExtractorPrototype
 
 Player *--- "1 \n - level" PlayerLevel
-Player *-- "1 \n - storage" Storage
+Player o-- "1 \n - storage" Storage
 abstract class Resource{
     - name : String
     - quantity : int
 }
 
 class Storage {
-
+    + getOr() : Or
+    + getIron() : Iron
+    + getWood() : Wood
+    + addRessource(ressource )
 }
-Storage *-- "1 \n - or" Or
-Storage *-- "1 \n - wood" Wood
-Storage *-- "1 \n - iron" Iron
+Storage -- "1 \n - or" Or
+Storage -- "1 \n - wood" Wood
+Storage -- "1 \n - iron" Iron
 
 class Or extends Resource {
 }
@@ -58,16 +61,18 @@ class Iron extends Resource {
 }
 
 abstract class PlayerLevel {
-    + levelUp(or : int, wood : int, iron : int);
+    - nextLevel : PlayerLevel
+    + levelUp(or : int, wood : int, iron : int)
 }
 
 
 class PlayerLevel1 extends PlayerLevel {
+    + levelUp(or : int, wood : int, iron : int);
 
 }
 
 class PlayerLevel2 extends PlayerLevel {
-
+    + levelUp(or :int, wood : int, iron :int) :
 }
 
 @enduml
