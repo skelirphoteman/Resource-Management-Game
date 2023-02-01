@@ -5,25 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ad47b40-abf3-4661-9d64-dd31c8070fc4" name="Changes" comment="Start of program :&#10;- Ressource (or, wood, iron)&#10;- Ressource Storage&#10;- beginning PlayerLevel">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/skelir/game/controller/PlayerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/skelir/game/exception/InsufficientRessourcesException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/skelir/game/exception/NegativeQuantity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/skelir/game/model/Iron.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/skelir/game/model/Or.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/skelir/game/model/PlayerLevel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/skelir/game/model/Ressource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/skelir/game/model/Storage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/skelir/game/model/Wood.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/skelir/game/model/IronTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/skelir/game/model/OrTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/skelir/game/model/WoodTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectManagment/UML/DGeneralClass.puml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectManagment/UML/DGeneralClass.puml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -227,7 +209,7 @@
       <workItem from="1674379282335" duration="2608000" />
       <workItem from="1675073451065" duration="108000" />
       <workItem from="1675087953482" duration="7605000" />
-      <workItem from="1675280643043" duration="6781000" />
+      <workItem from="1675280643043" duration="7023000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1673956981704</created>
@@ -334,7 +316,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675284227682</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Start of program :&#10;- Ressource (or, wood, iron)&#10;- Ressource Storage&#10;- beginning PlayerLevel">
+      <created>1675288881911</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1675288881911</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

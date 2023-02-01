@@ -45,9 +45,12 @@ package model {
     abstract class Resource{
         - name : String
         - quantity : int
+        + hasQuantity() : boolean
     }
 
     class Storage {
+        + subRessources(or, wood, iron)
+        + hasRessources(or, wood, iron) : boolean
     }
     Storage -- "1 \n - or" Or
     Storage -- "1 \n - wood" Wood
@@ -63,19 +66,13 @@ package model {
     class Iron extends Resource {
     }
 
-    abstract class PlayerLevel {
+    class PlayerLevel {
+        - orCost : int
+        - woodCost : int
+        - ironCost : int
         - nextLevel : PlayerLevel
-        + levelUp(or : int, wood : int, iron : int)
-    }
-
-
-    class PlayerLevel1 extends PlayerLevel {
-        + levelUp(or : int, wood : int, iron : int);
-
-    }
-
-    class PlayerLevel2 extends PlayerLevel {
-        + levelUp(or :int, wood : int, iron :int) :
+        + setCost(or, wood, iron)
+        + levelUp(storage : Storage)
     }
 }
 @enduml
