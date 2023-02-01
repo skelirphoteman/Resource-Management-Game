@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6ad47b40-abf3-4661-9d64-dd31c8070fc4" name="Changes" comment="Start of program :&#10;- Ressource (or, wood, iron)&#10;- Ressource Storage&#10;- beginning PlayerLevel">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/skelir/game/controller/PlayerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/skelir/game/exception/InsufficientRessourcesException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/skelir/game/exception/NegativeQuantity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/skelir/game/model/Iron.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/skelir/game/model/Or.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/skelir/game/model/PlayerLevel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/skelir/game/model/Ressource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/skelir/game/model/Storage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/skelir/game/model/Wood.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/skelir/game/model/IronTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/skelir/game/model/OrTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/skelir/game/model/WoodTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectManagment/UML/DGeneralClass.puml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectManagment/UML/DGeneralClass.puml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="UML Use Case" />
+        <option value="UML State" />
+        <option value="UML Class" />
+        <option value="UML Sequence" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2KS7IU4kddA8FRC7eATgnERqs8J" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultPlantUmlFileTemplate": "UML Sequence",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "last_opened_file_path": "/home/kalitics/IdeaProjects/jeu-de-gestion/ProjectManagment/UML",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.skelir.game.exception" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ProjectManagment/UML" />
+      <recent name="$PROJECT_DIR$/ProjectManagment/Scenarios" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.skelir.game.model" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.skelir.game.exception" />
+      <recent name="org.skelir.game.model" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.org.skelir.game.model in jeu-de-gestion">
+    <configuration name="IronTests.hasQuantityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jeu-de-gestion" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.skelir.game.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.skelir.game.model" />
+      <option name="MAIN_CLASS_NAME" value="org.skelir.game.model.IronTests" />
+      <option name="METHOD_NAME" value="hasQuantityTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrTests.nameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jeu-de-gestion" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.skelir.game.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.skelir.game.model" />
+      <option name="MAIN_CLASS_NAME" value="org.skelir.game.model.OrTests" />
+      <option name="METHOD_NAME" value="nameTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WoodTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jeu-de-gestion" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.skelir.game.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.skelir.game.model" />
+      <option name="MAIN_CLASS_NAME" value="org.skelir.game.model.WoodTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WoodTests.addQuantityTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jeu-de-gestion" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.skelir.game.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.skelir.game.model" />
+      <option name="MAIN_CLASS_NAME" value="org.skelir.game.model.WoodTests" />
+      <option name="METHOD_NAME" value="addQuantityTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="org.skelir.game.model in jeu-de-gestion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jeu-de-gestion" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.skelir.game.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.skelir.game.model" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="jeu-de-gestion" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="jeu-de-gestion" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.org.skelir.game.model in jeu-de-gestion" />
+        <item itemvalue="JUnit.IronTests.hasQuantityTest" />
+        <item itemvalue="JUnit.OrTests.nameTest" />
+        <item itemvalue="JUnit.WoodTests" />
+        <item itemvalue="JUnit.WoodTests.addQuantityTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6ad47b40-abf3-4661-9d64-dd31c8070fc4" name="Changes" comment="" />
+      <created>1673956050497</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1673956050497</updated>
+      <workItem from="1673956051706" duration="3012000" />
+      <workItem from="1673962386949" duration="3092000" />
+      <workItem from="1673968101619" duration="604000" />
+      <workItem from="1674029121354" duration="12275000" />
+      <workItem from="1674048921228" duration="4214000" />
+      <workItem from="1674116337973" duration="61000" />
+      <workItem from="1674116976395" duration="5705000" />
+      <workItem from="1674379282335" duration="2608000" />
+      <workItem from="1675073451065" duration="108000" />
+      <workItem from="1675087953482" duration="7605000" />
+      <workItem from="1675280643043" duration="6781000" />
+    </task>
+    <task id="LOCAL-00001" summary="First Commit">
+      <created>1673956981704</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673956981704</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Completing README.md">
+      <created>1673959191903</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673959191903</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Completing README.md">
+      <created>1674035794077</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674035794077</updated>
+    </task>
+    <task id="LOCAL-00004" summary="English translation">
+      <created>1674035851445</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674035851445</updated>
+    </task>
+    <task id="LOCAL-00005" summary="English translation">
+      <created>1674035902582</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1674035902582</updated>
+    </task>
+    <task id="LOCAL-00006" summary="First version of technical specifications (fr)">
+      <created>1674036910613</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1674036910613</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Preliminary study - technical specifications (fr)">
+      <created>1674041614864</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1674041614864</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Preliminary study - technical specifications (fr)">
+      <created>1674042209239</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1674042209239</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Preliminary study - technical specifications (fr)">
+      <created>1674042244349</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1674042244349</updated>
+    </task>
+    <task id="LOCAL-00010" summary=" functional requirements of technical specifications (fr)">
+      <created>1674044156045</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1674044156045</updated>
+    </task>
+    <task id="LOCAL-00011" summary=" functional requirements of technical specifications (fr)">
+      <created>1674118749890</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1674118749890</updated>
+    </task>
+    <task id="LOCAL-00012" summary=" functional requirements of technical specifications (fr)">
+      <created>1675093961401</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1675093961401</updated>
+    </task>
+    <task id="LOCAL-00013" summary=" functional requirements of technical specifications (fr)">
+      <created>1675239520128</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1675239520128</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Ameliorate DClass">
+      <created>1675284206537</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1675284206538</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Scenarios">
+      <created>1675284227682</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1675284227682</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First Commit" />
+    <MESSAGE value="Completing README.md" />
+    <MESSAGE value="English translation" />
+    <MESSAGE value="First version of technical specifications (fr)" />
+    <MESSAGE value="Preliminary study - technical specifications (fr)" />
+    <MESSAGE value=" functional requirements of technical specifications (fr)" />
+    <MESSAGE value="Ameliorate DClass" />
+    <MESSAGE value="Scenarios" />
+    <MESSAGE value="Start of program :&#10;- Ressource (or, wood, iron)&#10;- Ressource Storage&#10;- beginning PlayerLevel" />
+    <option name="LAST_COMMIT_MESSAGE" value="Start of program :&#10;- Ressource (or, wood, iron)&#10;- Ressource Storage&#10;- beginning PlayerLevel" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/jeu_de_gestion$WoodTests.ic" NAME="WoodTests Coverage Results" MODIFIED="1675286823485" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.skelir.game.model.*</FILTER>
+    </SUITE>
+  </component>
+</project>

@@ -1,78 +1,81 @@
 @startuml
 'https://plantuml.com/class-diagram
 
-class Player{
-
-
-    + levelUp()
-    + buyExtractor()
-    + levelUpExtractor()
-    + collectExtractor()
-    + getExtractorList()
-}
-
-class ExtractorsRegistry <<singleton>>{
-    + getExtractorsPrototype() : List<ExtractorPrototype>
-    + getExtractorsById() : ExtractorPrototype
-    + addExtractorPrototype(extractor : ExtractorPrototype)
-}
-
-ExtractorsRegistry o-- "0..n \n - extractorsPrototype" ExtractorPrototype
-Extractor .up.> Storage
-Player .left.> ExtractorsRegistry
-
-class ExtractorPrototype {
-    - name : String
-    - efficiency : int
-}
-class Extractor {
-    - lastCollect : Time
-    + collect() : int
-}
-Player *-- Extractor
-ExtractorPrototype -- "1 \n - type"Resource
-Extractor -- "1 \n - extractorPrototype" ExtractorPrototype
-
-Player *--- "1 \n - level" PlayerLevel
-Player o-- "1 \n - storage" Storage
-abstract class Resource{
-    - name : String
-    - quantity : int
-}
-
-class Storage {
-    + getOr() : Or
-    + getIron() : Iron
-    + getWood() : Wood
-    + addRessource(ressource )
-}
-Storage -- "1 \n - or" Or
-Storage -- "1 \n - wood" Wood
-Storage -- "1 \n - iron" Iron
-
-class Or extends Resource {
-}
-
-class Wood extends Resource {
-}
-
-
-class Iron extends Resource {
-}
-
-abstract class PlayerLevel {
-    - nextLevel : PlayerLevel
-    + levelUp(or : int, wood : int, iron : int)
-}
-
-
-class PlayerLevel1 extends PlayerLevel {
-    + levelUp(or : int, wood : int, iron : int);
+package Controller{
+    class PlayerController <<singleton>>{
+        + levelUp()
+        + buyExtractor()
+        + levelUpExtractor()
+        + collectExtractor()
+        + getExtractorList()
+    }
 
 }
 
-class PlayerLevel2 extends PlayerLevel {
-    + levelUp(or :int, wood : int, iron :int) :
+package registry {
+    class ExtractorsRegistry <<singleton>>{
+         + getExtractorsPrototype() : List<ExtractorPrototype>
+         + getExtractorsById() : ExtractorPrototype
+         + addExtractorPrototype(extractor : ExtractorPrototype)
+     }
 }
 
+package model {
+
+
+
+    ExtractorsRegistry o-- "0..n \n - extractorsPrototype" ExtractorPrototype
+    Extractor .left.> Storage
+    PlayerController .right.> ExtractorsRegistry
+
+    class ExtractorPrototype {
+        - name : String
+        - efficiency : int
+    }
+    class Extractor {
+        - lastCollect : Time
+        + collect() : int
+    }
+    PlayerController *-- Extractor
+    ExtractorPrototype -- "1 \n - type"Resource
+    Extractor ---- "1 \n - extractorPrototype" ExtractorPrototype
+
+    PlayerController *--- "1 \n - level" PlayerLevel
+    PlayerController o-- "1 \n - storage" Storage
+    abstract class Resource{
+        - name : String
+        - quantity : int
+    }
+
+    class Storage {
+    }
+    Storage -- "1 \n - or" Or
+    Storage -- "1 \n - wood" Wood
+    Storage -- "1 \n - iron" Iron
+
+    class Or extends Resource {
+    }
+
+    class Wood extends Resource {
+    }
+
+
+    class Iron extends Resource {
+    }
+
+    abstract class PlayerLevel {
+        - nextLevel : PlayerLevel
+        + levelUp(or : int, wood : int, iron : int)
+    }
+
+
+    class PlayerLevel1 extends PlayerLevel {
+        + levelUp(or : int, wood : int, iron : int);
+
+    }
+
+    class PlayerLevel2 extends PlayerLevel {
+        + levelUp(or :int, wood : int, iron :int) :
+    }
+}
 @enduml
