@@ -47,7 +47,7 @@ public class PlayerLevel {
         return nextLevel;
     }
 
-    private void setNextLevel(PlayerLevel nextLevel) {
+    public void setNextLevel(PlayerLevel nextLevel) {
         this.nextLevel = nextLevel;
     }
 

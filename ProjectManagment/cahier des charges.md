@@ -8,7 +8,7 @@ Le but est d'atteindre le niveau maximum (2 dans la première version).
 
 Pour passer un niveau il faut avoir les ressources demander par celui-ci.
 
-Exemple : passage niveau 1 = 20 de bois et 20 de fers
+Exemple : passage niveau 1 = 20or,  20 de bois et 20 de fers
 
 Il existe 3 types de ressource :
 
