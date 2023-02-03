@@ -83,4 +83,9 @@ public class PlayerLevel {
 
         return nextLevel;
     }
+
+    @Override
+    public String toString() {
+        return String.valueOf(getLevel());
+    }
 }

@@ -64,7 +64,7 @@ abstract class View implements ViewInterface{
         int index = 0;
         for (SelectableChoice selectableChoice:
                 getSelectableChoices()) {
-            message.append("(" + (index++) + ") - " + selectableChoice.getMessage());
+            message.append("(" + (index++) + ") - ").append(selectableChoice.getMessage()).append("\n");
         }
 
         return message.toString();

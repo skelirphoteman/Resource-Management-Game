@@ -3,11 +3,9 @@ package org.skelir.game.controller;
 import org.skelir.game.exception.InsufficientRessourcesException;
 import org.skelir.game.model.PlayerLevel;
 import org.skelir.game.model.Storage;
-import org.skelir.game.vue.PlayerInformationView;
 import org.skelir.game.vue.ViewInterface;
 
 import java.util.ArrayList;
-import java.util.StringJoiner;
 
 /**
  * Singleton Design Pattern
@@ -46,13 +44,23 @@ public class PlayerController {
 
     public void levelUp(ViewInterface viewInterface)
     {
+        ArrayList<String> informations = new ArrayList<>();
         try {
             setPlayerLevel(
                     getLevel().levelUp(
                             getStorage()
                     )
             );
+            informations.add(new StringBuilder().append("Congratulation ! You are level ").append(getLevel()).toString());
+            viewInterface.validResponse(informations);
+
         } catch (InsufficientRessourcesException e) {
+            informations.add(
+                    new StringBuilder()
+                            .append("/!\\ ")
+                            .append("You don't have sufficient resources to level up")
+                            .toString()
+            );
             viewInterface.errorResponse(e.getMessage());
         }
     }
