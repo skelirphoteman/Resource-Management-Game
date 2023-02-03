@@ -89,6 +89,10 @@ public class PlayerController {
         this.level = playerLevel;
     }
 
+    /**
+     * Get playerInformations
+     * @param playerInformationView view asker
+     */
     public void informations(ViewInterface playerInformationView) {
         ArrayList<String> informations = new ArrayList<>();
         informations.add(new StringBuilder().append("Level : ").append(getLevel().getLevel()).toString());

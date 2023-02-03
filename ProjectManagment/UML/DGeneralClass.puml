@@ -75,4 +75,16 @@ package model {
         + levelUp(storage : Storage)
     }
 }
+
+
+package view {
+    class ViewInterface {
+     + errorResponse(error : String
+     + validResponse(informations : List<String>)
+     + update(int choice) : ViewInterface
+     + render(
+    }
+}
+
+ViewInterface .right.> PlayerController
 @enduml
