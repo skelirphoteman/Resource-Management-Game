@@ -25,7 +25,3 @@ b
 -src/main/java/org/skelir/game/model/Wood.java,3/e/3e8394fcccc9172967a95dd816268a4caccd7ac1
 b
 2src/test/java/org/skelir/game/model/WoodTests.java,8/e/8e3fe0f2d940d430950982511e0b24e14ce1ac9b
-W
-'ProjectManagment/UML/DGeneralClass.puml,3/9/39ada101baac8646e783887f1993478c6e7a3089
-d
-4src/main/java/org/skelir/game/model/PlayerLevel.java,5/7/57c8353eba8a65529ff97cbeee2f3af80ee255c5
