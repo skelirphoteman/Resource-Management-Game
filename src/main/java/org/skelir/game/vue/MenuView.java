@@ -6,12 +6,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class MenuView implements ViewInterface{
-
-    private List<SelectableChoice> selectableChoices;
-
+public class MenuView extends View{
     public MenuView()
     {
+        super();
     }
 
     @Override
@@ -20,38 +18,17 @@ public class MenuView implements ViewInterface{
     }
 
     @Override
-    public void validResponse() {
-
-    }
-
-    @Override
-    public ViewInterface update(int choice) throws InvalidSelectableChoiceException {
-        if (choice >= getSelectableChoices().size())
-            throw new InvalidSelectableChoiceException();
-        return getSelectableChoices().get(choice).getViewInterface();
-    }
-
-    @Override
     public void render() {
-        generateSelectableChoices();
+        super.render();
         StringBuilder message = new StringBuilder();
-        message.append("Select action : \n");
 
-        int index = 0;
-        for (SelectableChoice selectableChoice:
-             getSelectableChoices()) {
-            message.append("(" + (index++) + ") - " + selectableChoice.getMessage());
-        }
+        message.append(super.getPrintChoice());
+
         System.out.println(message);
 
     }
 
-    private List<SelectableChoice> getSelectableChoices() {
-        return selectableChoices;
-    }
-
-    private void generateSelectableChoices() {
-        selectableChoices = new ArrayList<>();
-        selectableChoices.add(new SelectableChoice("View player information", new MenuView()));
+    protected void generateSelectableChoices() {
+        getSelectableChoices().add(new SelectableChoice("View player information", new PlayerInformationView()));
     }
 }

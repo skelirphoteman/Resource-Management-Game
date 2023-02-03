@@ -35,26 +35,26 @@ public class Storage {
 
     /**
      * add Or to storage
-     * @param or
+     * @param qts
      */
-    public void addOr(Or or) {
-        or.addQuantity(or.getQuantity());
+    public void addOr(int qts) {
+        or.addQuantity(qts);
     }
 
     /**
      * add Wood to storage
-     * @param wood
+     * @param qts
      */
-    public void addWood(Wood wood) {
-        wood.addQuantity(wood.getQuantity());
+    public void addWood(int qts) {
+        wood.addQuantity(qts);
     }
 
     /**
      * add Iron to storage
-     * @param iron
+     * @param qts
      */
-    public void addIron(Iron iron) {
-        iron.addQuantity(iron.getQuantity());
+    public void addIron(int qts) {
+        iron.addQuantity(qts);
     }
 
 
@@ -86,5 +86,17 @@ public class Storage {
             e.printStackTrace();
         }
 
+    }
+
+    public int getOrQuantity() {
+        return or.getQuantity();
+    }
+
+    public int getWoodQuantity() {
+        return wood.getQuantity();
+    }
+
+    public int getIronQuantity() {
+        return iron.getQuantity();
     }
 }

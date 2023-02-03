@@ -3,7 +3,11 @@ package org.skelir.game.controller;
 import org.skelir.game.exception.InsufficientRessourcesException;
 import org.skelir.game.model.PlayerLevel;
 import org.skelir.game.model.Storage;
+import org.skelir.game.vue.PlayerInformationView;
 import org.skelir.game.vue.ViewInterface;
+
+import java.util.ArrayList;
+import java.util.StringJoiner;
 
 /**
  * Singleton Design Pattern
@@ -21,6 +25,7 @@ public class PlayerController {
 
     private void init(){
         this.storage = new Storage();
+        storage.addOr(50);
 
         PlayerLevel level1 = new PlayerLevel();
         level1.setCost(300, 20, 20);
@@ -47,7 +52,6 @@ public class PlayerController {
                             getStorage()
                     )
             );
-            viewInterface.validResponse();
         } catch (InsufficientRessourcesException e) {
             viewInterface.errorResponse(e.getMessage());
         }
@@ -75,5 +79,16 @@ public class PlayerController {
     )
     {
         this.level = playerLevel;
+    }
+
+    public void informations(ViewInterface playerInformationView) {
+        ArrayList<String> informations = new ArrayList<>();
+        informations.add(new StringBuilder().append("Level : ").append(getLevel().getLevel()).toString());
+        informations.add("Storage :");
+        informations.add(new StringBuilder().append("\t- Or : ").append(getStorage().getOrQuantity()).toString());
+        informations.add(new StringBuilder().append("\t- Wood : ").append(getStorage().getWoodQuantity()).toString());
+        informations.add(new StringBuilder().append("\t- Iron : ").append(getStorage().getIronQuantity()).toString());
+
+        playerInformationView.validResponse(informations);
     }
 }

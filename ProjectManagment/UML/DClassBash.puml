@@ -1,0 +1,26 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+interface ViewInterface {
+    + render() : void
+    + update(choice) : ViewInterface
+}
+
+abstract class View implements ViewInterface{
+    + render() : void
+    + update() : ViewInterface
+    # generateSelectableChoices() : void
+    # getSelectableChoices() : void
+}
+
+
+class SelectableChoice{
+    - message : String
+}
+
+SelectableChoice -- "1 \n - choice" ViewInterface
+SelectableChoice "0..n \n - selectableChoice" --* View
+
+
+
+@enduml
