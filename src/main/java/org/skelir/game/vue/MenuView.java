@@ -20,5 +20,6 @@ public class MenuView extends View{
     protected void generateSelectableChoices() {
         getSelectableChoices().add(new SelectableChoice("View player information", new PlayerInformationView()));
         getSelectableChoices().add(new SelectableChoice("Level Up", new LevelUpView()));
+        getSelectableChoices().add(new SelectableChoice("Buy Extractor", new BuyExtractorView()));
     }
 }

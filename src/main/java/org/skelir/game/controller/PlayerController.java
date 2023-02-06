@@ -103,4 +103,8 @@ public class PlayerController {
 
         playerInformationView.validResponse(informations);
     }
+
+    public void buyExtractor(Integer integer, ViewInterface viewInterface) {
+        viewInterface.errorResponse("Sorry but you don't have sufficient resources to level up");
+    }
 }
